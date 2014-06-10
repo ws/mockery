@@ -1,0 +1,24 @@
+{
+  "name": "mockery",
+  "version": "0.0.1",
+  "description": "Simulate SendGrid inbound webhook requests for testing.",
+  "main": "mockery.js",
+  "dependencies": {
+    "config": "^0.4.36",
+    "dimsum": "^0.1.8",
+    "faker": "^1.0.0",
+    "multipart-form-stream": "^0.0.0",
+    "multiparter": "ws/multiparter",
+    "request": "^2.36.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ws/mockery.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ws/mockery/issues"
+  },
+  "homepage": "https://github.com/ws/mockery"
+}
