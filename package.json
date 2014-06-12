@@ -1,15 +1,13 @@
 {
   "name": "mockery",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Simulate SendGrid inbound webhook requests for testing.",
   "main": "mockery.js",
   "dependencies": {
-    "config": "^0.4.36",
+    "bluebird": "^2.1.1",
     "dimsum": "^0.1.8",
     "faker": "^1.0.0",
-    "multipart-form-stream": "^0.0.0",
     "multiparter": "ws/multiparter",
-    "request": "^2.36.0",
     "nconf": "^0.6.9"
   },
   "devDependencies": {},
