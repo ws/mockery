@@ -1,4 +1,4 @@
-var multiparter = require('../multiparter/index.js')
+var multiparter = require('multiparter')
 var http = require('http')
 var Faker = require('faker')
 var dimsum = require('dimsum')
