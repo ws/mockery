@@ -1,6 +1,6 @@
 {
   "name": "mockery",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Simulate SendGrid inbound webhook requests for testing.",
   "main": "mockery.js",
   "dependencies": {
