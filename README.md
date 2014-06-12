@@ -11,8 +11,6 @@ Options are configured via nconf, which means you can use CLI arguments, env var
 
 Right now, it does not send valid **headers** or **spam_report** fields. It sends strings, but since I didn't feel like spending a year of my life writing fake header generation, they're just placeholder strings. If you feel like spending a year of your life writing fake header generation, a pull request would be much appreciated.
 
-It also sends different stuff for **text** and **html**, whereas you'd usually get the same content, but one in html form, and one in text form. This should be fixed soon, though I can't see how it would cause any major issues.
-
 ## Options
 
 **url** (required): The URL you are testing

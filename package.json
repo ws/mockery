@@ -1,11 +1,10 @@
 {
   "name": "mockery",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simulate SendGrid inbound webhook requests for testing.",
   "main": "mockery.js",
   "dependencies": {
     "bluebird": "^2.1.1",
-    "dimsum": "^0.1.8",
     "faker": "^1.0.0",
     "multiparter": "ws/multiparter",
     "nconf": "^0.6.9"
