@@ -5,7 +5,7 @@
   "main": "mockery.js",
   "dependencies": {
     "bluebird": "^2.1.1",
-    "faker": "^1.0.0",
+    "flake": "ws/flake",
     "multiparter": "ws/multiparter",
     "nconf": "^0.6.9"
   },
