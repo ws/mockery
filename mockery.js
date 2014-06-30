@@ -6,7 +6,8 @@ var fakeData = require('./lib/fakeData.js')
 
 config.defaults({
 	'count': 1,
-	'boundary': 'xYzZY'
+	'boundary': 'xYzZY',
+	'retries': 5
 })
 
 var mockery = new Mockery({
@@ -15,12 +16,12 @@ var mockery = new Mockery({
 	'boundary': config.get('boundary')
 })
 
-var promises = [];
-for(var i = 0; i < config.get('count'); i++){ promises.push(mockery.makeRequest(fakeData.all())) }
+var promises = []
+for(var i = 1; i <= config.get('count'); i++){ promises.push(mockery.makeRequestAndRetry(fakeData.all(), config.get('retries'))) }
 
 Q.all(promises)
-	.then(function(){
-		console.log('Success!')
+	.fin(function(){
+		console.log('Success.')
 	})
 	.catch(function(err){
 		console.log(err)
