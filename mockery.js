@@ -1,4 +1,4 @@
-var Promise = require('bluebird')
+var Q = require('q')
 var config = require('nconf').argv().env().file({ file: 'config.json' })
 
 var Mockery = require('./lib/mockery.js')
@@ -18,7 +18,7 @@ var mockery = new Mockery({
 var promises = [];
 for(var i = 0; i < config.get('count'); i++){ promises.push(mockery.makeRequest(fakeData.all())) }
 
-Promise.all(promises)
+Q.all(promises)
 	.then(function(){
 		console.log('Success!')
 	})

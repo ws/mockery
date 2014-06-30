@@ -4,10 +4,10 @@
   "description": "Simulate SendGrid inbound webhook requests for testing.",
   "main": "mockery.js",
   "dependencies": {
-    "bluebird": "^2.1.1",
     "flake": "ws/flake",
     "multiparter": "ws/multiparter",
-    "nconf": "^0.6.9"
+    "nconf": "^0.6.9",
+    "q": "^1.0.1"
   },
   "devDependencies": {},
   "repository": {
